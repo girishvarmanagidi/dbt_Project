@@ -1,0 +1,30 @@
+[0m00:00:44.975351 [debug] [MainThread]: Got an exception trying to initialize tracking
+
+
+============================== 00:00:45.104695 | c6edca3e-ee75-4b04-9932-e72cced7ac63 ==============================
+[0m00:00:45.104695 [info ] [MainThread]: Running with dbt=1.11.11
+[0m00:00:45.104695 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\giris\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'use_colors': 'True', 'invocation_command': 'dbt init', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m00:01:32.681167 [debug] [MainThread]: Starter project path: C:\Users\giris\Git_local\dbt_Project\.venv\Lib\site-packages\dbt\include\starter_project
+[0m00:01:32.716166 [info ] [MainThread]: 
+Your new dbt project "dbt_analytics" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m00:01:32.716166 [info ] [MainThread]: Setting up your profile.
+[0m00:01:42.783306 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m00:01:42.783306 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m00:01:42.783306 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m00:06:19.198694 [info ] [MainThread]: Profile dbt_analytics written to C:\Users\giris\.dbt\profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m00:06:19.198694 [debug] [MainThread]: Command `dbt init` succeeded at 00:06:19.198694 after 334.33 seconds
+[0m00:06:19.198694 [debug] [MainThread]: Flushing usage events
