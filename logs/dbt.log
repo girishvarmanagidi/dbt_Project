@@ -28,3 +28,31 @@ Happy modeling!
 [0m00:06:19.198694 [info ] [MainThread]: Profile dbt_analytics written to C:\Users\giris\.dbt\profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
 [0m00:06:19.198694 [debug] [MainThread]: Command `dbt init` succeeded at 00:06:19.198694 after 334.33 seconds
 [0m00:06:19.198694 [debug] [MainThread]: Flushing usage events
+[0m00:51:47.297961 [debug] [MainThread]: Got an exception trying to initialize tracking
+
+
+============================== 00:51:47.360809 | 775edd06-5bb5-474b-8a15-edccc9048ac5 ==============================
+[0m00:51:47.360809 [info ] [MainThread]: Running with dbt=1.11.11
+[0m00:51:47.360809 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\giris\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'use_colors': 'True', 'invocation_command': 'dbt run', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m00:51:47.360809 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path C:\Users\giris\Git_local\dbt_Project\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m00:51:47.360809 [debug] [MainThread]: Command `dbt run` failed at 00:51:47.360809 after 0.13 seconds
+[0m00:51:47.360809 [debug] [MainThread]: Flushing usage events
+[0m01:01:55.557521 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026ABC4CCFB0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026AC2573380>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026AC01451C0>]}
+
+
+============================== 01:01:55.561595 | 4bf467b1-d865-4b3e-8de3-2e521fb0d418 ==============================
+[0m01:01:55.561595 [info ] [MainThread]: Running with dbt=1.11.11
+[0m01:01:55.563347 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\giris\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'invocation_command': 'dbt run', 'indirect_selection': 'eager', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m01:01:55.564067 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path C:\Users\giris\Git_local\dbt_Project\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m01:01:55.564067 [debug] [MainThread]: Command `dbt run` failed at 01:01:55.564067 after 0.28 seconds
+[0m01:01:55.566083 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026AC222B500>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026AC2793AD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026AC196FEC0>]}
+[0m01:01:55.566083 [debug] [MainThread]: Flushing usage events
+[0m01:01:57.094101 [debug] [MainThread]: An error was encountered while trying to flush usage events
