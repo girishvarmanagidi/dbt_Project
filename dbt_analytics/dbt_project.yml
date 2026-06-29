@@ -38,7 +38,14 @@ models:
     Silver:
       +materialized: table
       +schema: silver
+    Gold:
+      +materialized: table
+      +schema: gold
 
 seeds:
   dbt_analytics:
     +schema: seeds
+
+tests:
+  dbt_analytics:
+    +schema: failed_records
