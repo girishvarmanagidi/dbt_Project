@@ -22,7 +22,7 @@ models:
       - name: daily_rate
         description: Daily rate of the employee
         data_tests:
-          - test_less_than_val:
+          - test_less_than_value:
               description: We are assuming that the minimum daily rate of employee cannot be less than 100. 
                            So we are checking here if there are any employees whose daily rate is less than 100. 
               arguments:
@@ -54,7 +54,7 @@ models:
       - name: hourly_rate
         description: Hourly Rate of the employee
         data_tests:
-          - test_less_than_val:
+          - test_less_than_value:
               description: We are assuming that the minimum hourly rate of employee cannot be less than 28. 
                            So we are checking here if there are any employees whose hourly rate is less than 28. 
               arguments:

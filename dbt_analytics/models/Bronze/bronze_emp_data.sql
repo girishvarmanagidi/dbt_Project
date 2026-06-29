@@ -1,5 +1,6 @@
 {{ config(
-    database = get_database(var('env'))
+    database = get_database(var('env')),
+    materialized = 'view'
 )
 }}
 
