@@ -49,3 +49,7 @@ seeds:
 tests:
   dbt_analytics:
     +schema: failed_records
+
+vars:
+  env: dev
+  

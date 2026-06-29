@@ -5,8 +5,11 @@ models:
       - name: age
         description: Age of the employee
         data_tests:
-          - test_less_than_eighteen:
-              description: Age of the employee must be greater than 18. This is a business rule for the company. 
+          - test_custom_range:
+              description: Age of the employee range between 18 and 100. This is a business rule for the company. 
+              arguments:
+                min_val: 18
+                max_val: 100
               config:
                 severity: warn
 

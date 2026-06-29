@@ -5,7 +5,7 @@ with base as
     {{ref('silver_clean_emp_hr_lookup_data')}}
 )
 select 
-employeenumber,
-monthlyincome,
-{{income_band('monthlyincome')}} as income_band
+employee_number,
+monthly_income,
+{{income_band('monthly_income')}} as income_band
 from base

@@ -1,3 +1,8 @@
+{{ config(
+    database = get_database(var('env'))
+)
+}}
+
 with  get_raw_cast_data as
 (
 select

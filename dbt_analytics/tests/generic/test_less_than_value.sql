@@ -1,4 +1,4 @@
-{% test test_less_than_val(model, column_name, val)%}
+{% test test_less_than_value(model, column_name, val)%}
 
 with validation as
     (
