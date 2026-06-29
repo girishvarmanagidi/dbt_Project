@@ -4,7 +4,12 @@ models:
     columns:
       - name: age
         description: Age of the employee
-        
+        data_tests:
+          - test_less_than_eighteen:
+              description: Age of the employee must be greater than 18. This is a business rule for the company. 
+              config:
+                severity: warn
+
       - name: attrition
         description: Emee Attrition. Converted the Yes and No values for this field coming from source to 1 and 0 respectively. 
         
@@ -13,6 +18,14 @@ models:
         
       - name: daily_rate
         description: Daily rate of the employee
+        data_tests:
+          - test_less_than_val:
+              description: We are assuming that the minimum daily rate of employee cannot be less than 100. 
+                           So we are checking here if there are any employees whose daily rate is less than 100. 
+              arguments:
+                val: 100
+              config:
+                severity: error
         
       - name: department
         description: Department of the employee
@@ -37,6 +50,14 @@ models:
         
       - name: hourly_rate
         description: Hourly Rate of the employee
+        data_tests:
+          - test_less_than_val:
+              description: We are assuming that the minimum hourly rate of employee cannot be less than 28. 
+                           So we are checking here if there are any employees whose hourly rate is less than 28. 
+              arguments:
+                val: 28
+              config:
+                severity: error
         
       - name: job_involvement
         description: Involvement of the employee in job
